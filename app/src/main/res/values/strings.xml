@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MvcTesting</string>
+    <string name="connection_problem">Could not connect, please try again and check your internet connection.</string>
+    <string name="open_weather_map_api_key">343017ba45617cc3f9d25067230a5b6f</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="intent_location_bundle_error">Error in getting location, please try again</string>
+    <string name="error_retriving_location">An error occurred while getting location data %1$s</string>
+    <string name="weather_result_in_celsius">"%1$s \u2109"</string>
+
+    <string name="weather_max">"Max: %1$.2f \u2109"</string>
+    <string name="weather_min">"Min: %1$.2f \u2109"</string>
+    <string name="weather_details">Weather information for %1$s located at: %2$s</string>
+    <string name="weather_humidty">The humidity is %.2f %%</string>
+    <string name="weather_icon">http://openweathermap.org/img/w/%1$s.png</string>
+</resources>

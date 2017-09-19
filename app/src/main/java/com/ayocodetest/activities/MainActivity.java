@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.ayocodetest.R;
 import com.ayocodetest.base.BaseActivity;
+import com.ayocodetest.misc.DatabaseManager;
 import com.ayocodetest.model.WeatherData;
 import com.ayocodetest.network.response.ErrorResponse;
 import com.ayocodetest.network.task.GetCurrentWeather;
@@ -78,6 +79,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onSuccess(WeatherData result) {
                 currentData = result;
+                DatabaseManager.getInstance().saveWeatherDataToHistory(result);
                 updateUI();
             }
 

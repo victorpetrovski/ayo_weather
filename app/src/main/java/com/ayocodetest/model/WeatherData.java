@@ -74,8 +74,8 @@ public class WeatherData {
         return temperature.getHumidity();
     }
 
-    public String getTemperatureValue(){
-        return String.valueOf(temperature.getTemp());
+    public float getTemperatureValue(){
+        return temperature.getTemp();
     }
 
 }

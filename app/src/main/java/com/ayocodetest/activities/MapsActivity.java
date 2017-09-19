@@ -3,6 +3,7 @@ package com.ayocodetest.activities;
 import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -12,6 +13,8 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.ayocodetest.R;
@@ -213,6 +216,22 @@ public class MapsActivity extends BaseActivity implements OnMapReadyCallback, Go
                 return;
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.maps_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_history:
+                startActivity(new Intent(this, HistoryActivity.class));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

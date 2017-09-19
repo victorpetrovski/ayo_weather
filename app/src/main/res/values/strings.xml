@@ -14,5 +14,12 @@
     <string name="weather_humidty">The humidity is %.2f %%</string>
     <string name="weather_icon">http://openweathermap.org/img/w/%1$s.png</string>
     <string name="title_activity_history">Weather History</string>
+    <string name="title_activity_details">Weather Details</string>
     <string name="no_data">Currently we have no history data</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="location_permissions_dialog_title">Location Permission Needed</string>
+    <string name="location_permissions_dialog_body">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="ok">OK</string>
+
 </resources>
+

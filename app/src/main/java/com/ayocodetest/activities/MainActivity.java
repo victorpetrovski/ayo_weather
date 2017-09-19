@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.tv_weather_max)
     TextView tvWeatherMax;
 
-
     WeatherData currentData;
 
     public final static String LOCATION_BUNDLE_EXTRAS = "com.ayocodetest.activities.LOCATION_BUNDLE_EXTRAS";
